@@ -1,3 +1,31 @@
-img{
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.gallery {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: 50vh;
+}
+.subheader{
+    display: block;
+    text-align: center;
+}
+figure {
+    border-radius: 5px;
     max-width: 100px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    padding: 10px;
+    text-align: center;
+    background: #eee;
 }
