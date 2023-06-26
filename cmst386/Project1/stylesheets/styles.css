@@ -79,3 +79,10 @@ figcaption {
     text-align: center;
     background: #D9ECC1;
 }
+
+footer {
+    background-color: #D9ECC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
