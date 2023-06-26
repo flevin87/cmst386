@@ -82,7 +82,5 @@ figcaption {
 
 footer {
     background-color: #D9ECC1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 50px;
 }
