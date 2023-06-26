@@ -1,21 +1,71 @@
-h1{
+body {
+    font-family: verdana, arial, sans-serif;
+    background-color: #FEF9FF;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+#profilePic {
+    border-radius: 50%;
+    border: 10px solid #D9ECC1;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
+
 .gallery {
     display: flex;
     align-items: baseline;
     justify-content: center;
     height: 50vh;
 }
-.subheader{
-    display: block;
-    text-align: center;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 5px solid #D9ECC1;
 }
+
 figure {
-    border-radius: 5px;
     max-width: 100px;
 }
 
@@ -27,5 +77,5 @@ figure img {
 figcaption {
     padding: 10px;
     text-align: center;
-    background: #eee;
+    background: #D9ECC1;
 }
