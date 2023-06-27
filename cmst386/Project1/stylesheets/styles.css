@@ -1,13 +1,16 @@
 body {
-    font-family: verdana, arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
     background-color: #FEF9FF;
-    text-align: center;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
 }
 
 div.portfolio {
@@ -16,6 +19,8 @@ div.portfolio {
     align-items: center;
     justify-content: center;
     height: 75vh;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #profilePic {
@@ -24,8 +29,7 @@ div.portfolio {
     width: 200px;
     height: 200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 li {
@@ -39,14 +43,16 @@ li {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #333;
+    font-weight: bold;
 }
 
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: 2em;
+    margin-top: 1em;
 }
 
 .gallery {
@@ -54,6 +60,7 @@ h1 {
     align-items: baseline;
     justify-content: center;
     height: 50vh;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -63,6 +70,7 @@ h1 {
     justify-content: center;
     border-radius: 50px;
     border: 5px solid #D9ECC1;
+    padding: 1em;
 }
 
 figure {
@@ -72,6 +80,8 @@ figure {
 figure img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 figcaption {
@@ -83,4 +93,34 @@ figcaption {
 footer {
     background-color: #D9ECC1;
     line-height: 50px;
+    padding: 1em;
+    color: #333;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*added dropdown menu - stylings below*/
+nav ul li {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    background-color: #D9ECC1;
+}
+
+.dropdown li {
+    display: block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+
 }
