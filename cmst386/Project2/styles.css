@@ -35,6 +35,8 @@ section {
     padding: 1em;
 }
 img{
-    width: 100%;
+    width: 50%;
     height: auto;
+    justify-content: center;
+    align-items: center;
 }
