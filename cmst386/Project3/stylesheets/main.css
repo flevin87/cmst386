@@ -1,3 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: "spectral", "serif";
+}
+
 body {
-  background-color: aqua;
+  background-color: #FDF6F0;
+}
+
+header {
+  background-color: #FDF6F0;
+  overflow: auto;
+  font-weight: bold;
+}
+header h1 {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+nav {
+  background-color: #41b3a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #e27d60;
+}
+nav li {
+  display: inline-flex;
+  margin: 2em;
+  border-right: 2px solid #c38d9e;
+  padding: 0 1em;
+}
+
+.wrapper {
+  margin: 5%;
+}
+.wrapper h2,
+.wrapper h3 {
+  text-align: center;
+  padding: 1em;
+}
+.wrapper p {
+  line-height: 1.5;
+}
+
+.subContentHeader p {
+  padding-bottom: 1em;
+}
+
+.subContentMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.subContentMain span {
+  font-weight: bold;
+}
+.subContentMain .flex-left {
+  margin-right: 1em;
+}
+.subContentMain .flex-right {
+  margin-left: 1em;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cta-button {
+  align-self: center;
+  margin: auto 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 0.75em 1.5em;
+  border-radius: 25px;
+  background: linear-gradient(to right, #85dcba, #41b3a3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.5s ease;
+}
+.cta-button:hover {
+  background: linear-gradient(to right, #41b3a3, #85dcba);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 1em;
+  }
+  .subContentMain {
+    flex-direction: column;
+  }
+  .subContentMain .flex-left {
+    margin-right: 0;
+  }
+  .subContentMain .flex-right {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+    margin-top: 0.75em;
+  }
+  nav li {
+    margin: 0.5em;
+  }
+  .wrapper {
+    margin: 2.5%;
+  }
+  .cta-button {
+    font-size: 0.75em;
+    padding: 0.5em 1em;
+  }
+}
+.toTop {
+  text-decoration: none;
+  color: #41b3a3;
+}
+.toTop:hover {
+  color: #e27d60;
 }/*# sourceMappingURL=main.css.map */

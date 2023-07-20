@@ -6,28 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Design | SASS | and More!</title>
     <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav></nav>
     <header>
-        <h1>Welcome to my third project</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <ul>
+                <li><a href="project3.html">Project Main</a></li>
+                <li><a href="preprocessing.html">Preprocessing</a></li>
+            </ul>
+        </nav>
+
+        <h1>Welcome to Project 3.</h1>
     </header>
-    <main>
-        <h2>Responsive Design</h2>
-        <p>Responsive design ensures that website layouts adjust in a dynamic way, responding to both screen size and
-            orientation. This is crucial when developing content because users consume web content in significantly
-            different ways, be it a smartphone, desktop, tablet, or laptop. By developing with responsive design in
-            mind, the developer is able to significantly improve user experiences, increase engagement, and boost
-            consumer retention and conversion. </p>
-        <h2>Audience Analytics</h2>
-        <p></p>
-    </main>
-    <aside>
-        <a href="preprocessing.html"><button>Learn Preprocessing</button></a>
-    </aside>
+    <div class="wrapper">
+        <section class="mainContent">
+            <h2>Responsive Design</h2>
+            <p>Responsive design ensures that website layouts adjust in a dynamic way, responding to both screen size
+                and
+                orientation. This is crucial when developing content because users consume web content in significantly
+                different ways, be it a smartphone, desktop, tablet, or laptop. By developing with responsive design in
+                mind, the developer is able to significantly improve user experiences, increase engagement, and boost
+                consumer retention and conversion. </p>
+        </section>
+
+        <div class="subContentHeader">
+            <h2>Audience Analytics</h2>
+            <p>Google Analytics provides valuable information about a target audience and how they interact with a
+                developer's or business's content. Here are some key reports that one can get from Google:
+            <div class="subContentMain">
+                <section class="flex-left">
+                    <h3>Audience Overview</h3>
+                    <p>This is an overall snapshot of who is accessing your website. This is important to give you a
+                        sense
+                        of
+                        who
+                        your users are. In it are details regarding age, gender, interest, amongst other demographics.
+                        Additionally,
+                        you can monitor traffic performance in nearly realtime. Using this report can allow you to adapt
+                        quickly, so
+                        that you may adjust and tailor your content and marketing strategies to suit the users.</p>
+                    <h3>Acquisition Overview</h3>
+                    <p>This allows you to view what channels, or source, your target audience is coming from. By
+                        analyzing
+                        your
+                        best
+                        channels, you are able to adjust your focus and optimization on them to guarantee higher
+                        conversion
+                        rates
+                        and therefore a better ROI.</p>
+                </section>
+                <section class="flex-right">
+                    <h3>Behavior Flow</h3>
+                    <p>The behavior flow report helps you understand the actual paths that users take on your website
+                        from
+                        the
+                        time
+                        they enter until the time they leave. This allows you to see what content keeps your users
+                        engaged
+                        and
+                        where
+                        they usually go from there. Understanding the behavior flow report can allow you to understand
+                        content
+                        issues or where users drop off, so that you can then optimize these areas of your content.</p>
+                </section>
+            </div>
+
+        </div>
+        <div class="btnContainer">
+            <a href="preprocessing.html" class="cta-button">Learn Preprocessing</a>
+        </div>
+    </div>
     <footer></footer>
-    Hello World!
 </body>
 
 </html>

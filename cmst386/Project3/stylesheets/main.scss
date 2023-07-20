@@ -1,3 +1,157 @@
-body{
-    background-color: aqua;
+@import '_vars.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: 'spectral', 'serif';
 }
+
+body {
+    background-color: $backgroundColor;
+}
+
+header {
+    background-color: $backgroundColor;
+    overflow: auto;
+    font-weight: bold;
+
+    h1 {
+        text-align: center;
+        margin-top: 1.5em;
+    }
+}
+
+nav {
+    background-color: $interactiveColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: $textColor;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $highlightColor;
+        }
+    }
+
+    li {
+        display: inline-flex;
+        margin: 2em;
+        border-right: 2px solid $subtitleColor;
+        padding: 0 1em;
+    }
+}
+
+.wrapper {
+    margin: 5%;
+
+    h2,
+    h3 {
+        text-align: center;
+        padding: 1em;
+    }
+
+    p {
+        line-height: 1.5;
+
+    }
+}
+
+.subContentHeader {
+    p {
+        padding-bottom: 1em;
+    }
+}
+
+.subContentMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-weight: bold;
+    }
+
+    .flex-left {
+        margin-right: 1em;
+    }
+
+    .flex-right {
+        margin-left: 1em;
+    }
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cta-button {
+    align-self: center;
+    margin: auto 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    border-radius: 25px;
+    background: linear-gradient(to right, #85dcba, #41b3a3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.5s ease;
+
+    &:hover {
+        background: linear-gradient(to right, #41b3a3, #85dcba);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+  
+      li {
+        margin: 1em;
+      }
+    }
+  
+    .subContentMain {
+      flex-direction: column;
+  
+      .flex-left {
+        margin-right: 0;
+      }
+  
+      .flex-right {
+        margin-left: 0;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5em;
+      margin-top: 0.75em;
+    }
+  
+    nav li {
+      margin: 0.5em;
+    }
+  
+    .wrapper {
+      margin: 2.5%;
+    }
+  
+    .cta-button {
+      font-size: 0.75em;
+      padding: 0.5em 1em;
+    }
+  }
+  
+  .toTop{
+    text-decoration: none;
+    color: $interactiveColor;
+    &:hover{
+        color: $highlightColor;
+    }
+  }

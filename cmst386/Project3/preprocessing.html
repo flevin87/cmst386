@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preprocessing with SASS</title>
-        <!-- I implemented SASS by downloading Node.JS and then using the command line command "npm install -g sass"
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+    <!-- I implemented SASS by downloading Node.JS and then using the command line command "npm install -g sass"
     Utilizing the NodeJS library allows me to write all of my styles in the main.scss and as long as I tell VSCode to "Watch SASS", the styles I write will be compiled and converted into CSS that the browser is able to understand.-->
 </head>
+
 <body>
-    
+    <a id ="top"></a>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <ul>
+                <li><a href="project3.html">Project Main</a></li>
+                <li><a href="preprocessing.html">Preprocessing</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Welcome to Project 3.</h1>
+    </header>
+    <div class="wrapper">
+        <section class="mainContent">
+            <h2>Preprocessing</h2>
+            <p>Preprocessing can be implemented via the client or the server. For client-side preprocessing, you need to
+                compile your preprocessed code like SASS into CSS in the user's browser using Javascript. Server-side
+                however, is done before the website is sent to the user's browser by using a task runner to "watch" your
+                changes in Sass or Less then compile them into CSS. The latter is more efficient, as it reduces load on
+                the
+                user's browser and also allows the SASS based CSS to still appear in the browser if that user has
+                Javascript
+                disabled.</p>
+        </section>
+        <div class="subContentHeader">
+            <h2>Features</h2>
+            <p>SASS keeps styles clean, organized, and efficient with its wealth of features that help cut down on
+                tedious
+                code.
+            </p>
+            <div class="subContentMain">
+                <section class="flex-left">
+                    <p><span>Variables:</span>SASS allows you to declare variables to cut down on excessive time spent
+                        changing
+                        each
+                        element's style one by one. Say that you use a specific color a lot on your page. With SASS, you
+                        can
+                        initialize the variable and assign it a specific value, and then call to that variable each time
+                        you
+                        wish to
+                        use it.</p>
+                    <p><span>Nesting:</span> this allows you to condense many different elements and their property
+                        value
+                        pairs
+                        under one roof. This is a convenient and clean way to organize your content, so that it is easy
+                        to
+                        identify,
+                        modify, and organize all the different elements you may be working with.</p>
+                    <p><span>Separate and Import:</span> as your stylesheets grow, you may wish that you could work on
+                        certain
+                        elements in a different file. With SASS, you are able to do just that by creating another file
+                        and
+                        then
+                        using @import to bring that work back into your styles. This further aids in the organization of
+                        your
+                        code.
+                    </p>
+                </section>
+                <section class="flex-right">
+                    <p><span>Mixins: </span>Mixins are reusable chunks of code in SASS. They allow you to define
+                        specific
+                        styles
+                        that can be reused multiple times throughout your stylesheets without having to remember and
+                        rewrite
+                        all
+                        of
+                        the details. Values can also be passed into them for further customization and flexibility.</p>
+                    <p><span>Operators: </span>SASS supports standard math operators which can be incredibly helpful
+                        when
+                        calculating things like widths, heights, margins, paddings, and other CSS size-related
+                        properties.
+                    </p>
+                    <p><span>Functions: </span>Like in Javascript, SASS includes customizable functions that allow you
+                        to
+                        define
+                        complex operations that can be reused throughout your code to manipulate things like color,
+                        sizes,
+                        strings,
+                        lists, and more.</p>
+                </section>
+            </div>
+        </div>
+        <a href="#top" class = "toTop">Back to Top</a>
 </body>
+
 </html>
