@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #FF7043;
+}
+.navbar a:hover {
+  transition: ease-in 0.3s;
+  color: #FFD700;
+}
+.navbar .logo {
+  margin-right: 50px;
+}
+.navbar .list {
+  list-style: none;
+  display: flex;
+  gap: 64px;
+}
+
+h1 {
+  color: #FF7043;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.445)), url(../images/ruan-richard-rodrigues-NjD3J4saktI-unsplash.jpg) no-repeat center/cover;
+  color: #FF7043;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  word-spacing: 0.25rem;
+}
+.container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  width: 40%;
+}
+.container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.container p {
+  font-size: 1.2rem;
+  max-width: 50%;
+}
+.container a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #0EA47A;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  padding: 0.5em 2em;
+  margin-top: 2rem;
+  color: #333333;
+  font-weight: 900;
+}
+.container a:hover {
+  transition: ease-in 0.3s;
+  background-color: #FF7043;
+  cursor: pointer;
+  color: #0EA47A;
+}
+
+.hero-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: black;
+}
+.hero-footer a {
+  margin: 0 auto;
+  text-decoration: none;
+  color: #FF7043;
+}
+.hero-footer p {
+  color: #FF7043;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+footer a {
+  margin: 0 auto;
+  text-decoration: none;
+  color: #FF7043;
+}
+footer p {
+  color: #FF7043;
+}
+
+.about-hero {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0EA47A;
+  font-weight: 900;
+}
+
+.story,
+.team {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+.story p,
+.team p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 25% 1rem;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.team-card .team-photo {
+  margin-top: 1rem;
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-container h1 {
+  color: #FF7043;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  margin-bottom: 10px;
+}
+
+.contact-container input[type=text],
+.contact-container input[type=email],
+.contact-container textarea,
+.contact-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #FF7043;
+}
+
+.contact-container input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  color: #333333;
+  background-color: #0EA47A;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-container input[type=submit]:hover {
+  background-color: #FFD700;
+}
+
+.mission-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+}
+
+.mission-values {
+  height: 50vh;
+}
+
+.mission-statement {
+  margin: auto 16px 2rem;
+}
+
+.values {
+  margin: auto 16px 2rem;
+}
+
+.blog-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+}
+
+.how-it-works-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.how-it-works .column {
+  width: 50%;
+  padding: 1rem 16px 0.5rem;
+  margin: 2rem;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

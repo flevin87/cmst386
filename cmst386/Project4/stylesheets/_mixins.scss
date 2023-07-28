@@ -1,0 +1,15 @@
+@mixin footers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    a{
+        margin: 0 auto;
+        text-decoration: none;
+        color: $secondaryColor;
+    }
+    p{
+        color: $secondaryColor;
+    }
+}
