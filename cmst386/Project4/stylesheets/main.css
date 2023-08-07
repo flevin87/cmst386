@@ -362,6 +362,10 @@ main {
   width: 100%;
 }
 
+h3 {
+  margin: auto 16px 2rem;
+}
+
 .faqs {
   margin: auto 16px 2rem;
 }
